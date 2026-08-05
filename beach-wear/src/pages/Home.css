@@ -1,0 +1,24 @@
+.brand-band {
+  background: var(--color-bg-alt);
+  padding: 72px 0;
+  text-align: center;
+}
+
+.brand-band-inner {
+  max-width: 640px;
+}
+
+.brand-band .eyebrow {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.brand-band h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 16px;
+}
+
+.brand-band p:last-child {
+  color: var(--color-ink-soft);
+  line-height: 1.6;
+}

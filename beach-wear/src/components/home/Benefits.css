@@ -1,0 +1,37 @@
+.benefits {
+  border-bottom: 1px solid var(--color-line);
+  background: var(--color-surface);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 32px 24px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.benefit-icon {
+  font-size: 1.4rem;
+}
+
+.benefit-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.benefit-text {
+  font-size: 0.78rem;
+  color: var(--color-ink-faint);
+}
+
+@media (max-width: 860px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

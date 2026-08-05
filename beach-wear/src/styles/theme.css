@@ -1,0 +1,49 @@
+/*
+  LUMINA RIO — tema "praia moderna"
+  Paleta: areia clara + teal oceânico profundo + coral de pôr do sol,
+  com tipografia serifada editorial (títulos) + sans-serif limpa (corpo).
+*/
+
+:root {
+  /* Superfícies */
+  --color-bg: #faf6ef;
+  --color-bg-alt: #f1e7d6;
+  --color-surface: #ffffff;
+
+  /* Marca */
+  --color-primary: #1f6f78;
+  --color-primary-dark: #144d54;
+  --color-primary-light: #5fa8ae;
+  --color-accent: #ff7a59;
+  --color-accent-dark: #e85f3d;
+
+  /* Texto */
+  --color-ink: #16242b;
+  --color-ink-soft: #4b5c63;
+  --color-ink-faint: #7c8a90;
+
+  /* Utilitárias */
+  --color-line: #e4d9c6;
+  --color-success: #2e7d4f;
+  --color-danger: #c94a3b;
+  --color-white: #ffffff;
+
+  /* Tipografia */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Forma */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* Sombra */
+  --shadow-sm: 0 1px 2px rgba(22, 36, 43, 0.06);
+  --shadow-md: 0 8px 24px rgba(22, 36, 43, 0.08);
+  --shadow-lg: 0 20px 48px rgba(22, 36, 43, 0.14);
+
+  /* Layout */
+  --container-width: 1280px;
+  --header-height: 84px;
+}
