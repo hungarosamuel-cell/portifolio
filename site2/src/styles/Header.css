@@ -1,0 +1,121 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: color-mix(in srgb, var(--color-bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition), padding var(--transition);
+  padding: 18px 0;
+}
+
+.header--scrolled {
+  border-bottom-color: var(--color-divider);
+  padding: 12px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.header__logo {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.header__nav-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.header__nav-link--active {
+  color: var(--color-accent);
+}
+
+.header__cta {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.header__toggle {
+  display: none;
+  color: var(--color-text);
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  position: relative;
+  z-index: 120;
+}
+
+.header__mobile-nav {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__toggle {
+    display: flex;
+  }
+
+  .header__mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(320px, 82%);
+    background-color: var(--color-bg);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 35px;
+    padding: 44px 35px;
+    transform: translateX(100%);
+    transition: transform var(--transition);
+    z-index: 110;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .header__mobile-nav--open {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .header__mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 35px;
+  }
+
+  .header__mobile-link {
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-text);
+  }
+}

@@ -1,0 +1,29 @@
+.location {
+  background-color: var(--color-surface);
+}
+
+.location__inner {
+  text-align: center;
+}
+
+.location__inner .section-title {
+  margin-bottom: 35px;
+}
+
+.location__frame {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid var(--color-accent);
+  line-height: 0;
+  box-shadow: var(--shadow-md);
+}
+
+.location__cta {
+  margin-top: 26px;
+}
+
+@media (max-width: 600px) {
+  .location__frame iframe {
+    height: 320px;
+  }
+}
